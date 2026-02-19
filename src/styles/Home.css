@@ -1,0 +1,87 @@
+.embla {
+  width: 100%;
+  max-width: 900px;
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* КАРТОЧКА */
+
+.slide-card {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slide-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.slide-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.slide-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.slide-info h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.slide-info p {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+}
+
+/* КНОПКИ */
+
+.embla__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.embla__buttons button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  background: #000;
+  color: #fff;
+  transition: background 0.2s ease;
+}
+
+.embla__buttons button:hover {
+  background: #333;
+}
